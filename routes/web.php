@@ -18,7 +18,9 @@ Route::get('/home', function () {
 });
 
 // Langkah 4, Mengirim data ke view
-Route::get('/mahasiswa', function () {
-    $nama = "Fury Dr";
-    return view('mahasiswa', compact('nama'));
-});
+//Route::get('/mahasiswa', function () {
+//    $nama = "Fury Dr";
+//    return view('mahasiswa', compact('nama'));
+//});
+
+Route::get('/mahasiswa', [\App\Http\Controllers\MahasiswaController::class, 'index']);

@@ -53,3 +53,24 @@ Coba akses : http://localhost:8000/mahasiswa
 !['Screenshot'](images/06.png)
 !['Screenshot'](images/07.png)
 !['Screenshot'](images/08.png)
+
+## Langkah 5, Menghubungkan Route, Controller, dan View
+Buat controller :
+`php artisan make::controller MahasiswaController`
+
+Isi controller (`app/Http/Controllers/MahasiswaController.php`) :
+```php
+namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+class MahasiswaController extends Controller
+{
+    public function index() {
+        $nama = "Budi";
+        return view('mahasiswa', compact('nama'));
+    }
+}
+```
+Ubah atau ubah juga route :
+```php
+Route::get('/mahasiswa', [\App\Http\Controllers\MahasiswaController::class, 'index']);
+```
