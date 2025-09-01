@@ -74,3 +74,7 @@ Ubah atau ubah juga route :
 ```php
 Route::get('/mahasiswa', [\App\Http\Controllers\MahasiswaController::class, 'index']);
 ```
+!['Screenshot'](images/09.png)
+!['Screenshot'](images/10.png)
+!['Screenshot'](images/11.png)
+!['Screenshot'](images/12.png)
