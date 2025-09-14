@@ -1,8 +1,9 @@
 @extends('layouts.master')
 
-@section('title', 'Contact')
+@section('title', 'Kontak')
 
 @section('content')
-    <h1>Hubungi kami</h1>
-    <p>Email: support@miniproject.test</p>
+    <h2>Hubungi Kami</h2>
+    <p>Email: musangstore@mail.com</p>
+    <p>WhatsApp: 0812-3456-7890</p>
 @endsection

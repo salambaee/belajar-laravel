@@ -6,8 +6,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/musang', function () {
+    return view('musang');
 });
 
 Route::get('/contact', function () {
