@@ -12,9 +12,8 @@
     <div class="container mt-4">
         @yield('content')
     </div>
+
+    @include('partials.footer')
 <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>2025 Jual Beli Musang</p>
-    </footer>
 </body>
 </html>
